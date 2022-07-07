@@ -1,0 +1,10 @@
+2022-07-07 00:44:24,574 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on MacBook-Pro-cua-nguyendev.local with PID 41484 (/Users/nguyendev/Work/project/learnJava/JDND-master/test/nd035-c4-Security-and-DevOps/starter_code/target/classes started by nguyendev in /Users/nguyendev/Work/project/learnJava/JDND-master/test/nd035-c4-Security-and-DevOps)
+2022-07-07 00:44:24,577 DEBUG c.e.d.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-07-07 00:44:24,577 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2022-07-07 00:44:25,939 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 1.475 seconds (JVM running for 1.886)
+2022-07-07 00:44:25,939 INFO c.e.d.SareetaApplication [main] Ecommerce Application Started
+2022-07-07 00:45:21,745 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on MacBook-Pro-cua-nguyendev.local with PID 41586 (/Users/nguyendev/Work/project/learnJava/JDND-master/test/nd035-c4-Security-and-DevOps/starter_code/target/classes started by nguyendev in /Users/nguyendev/Work/project/learnJava/JDND-master/test/nd035-c4-Security-and-DevOps)
+2022-07-07 00:45:21,750 DEBUG c.e.d.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-07-07 00:45:21,751 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2022-07-07 00:45:23,154 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 1.583 seconds (JVM running for 2.095)
+2022-07-07 00:45:23,155 INFO c.e.d.SareetaApplication [main] Ecommerce Application Started
