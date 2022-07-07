@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.controllers.UserController;
+
 import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
@@ -35,8 +36,8 @@ public class TestUserController {
     user.setId(1l);
     user.setUsername("nguyen");
     user.setPassword("nguyen123");
-
-    when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+    System.out.println("user"+ user);
+    when(userRepository.findById(1l)).thenReturn(Optional.of(user));
     when(userRepository.findByUsername("nguyen")).thenReturn(user);
   }
 
@@ -45,20 +46,21 @@ public class TestUserController {
   public void createUser() {
 
     CreateUserRequest userRequest = new CreateUserRequest();
-    userRequest.setUsername("nguyen");
-    userRequest.setPassword("nguyen");
-    userRequest.setConfirmPassword("nguyen");
+    userRequest.setUsername("nguyenlinh");
+    userRequest.setPassword("nguyen123");
+    userRequest.setConfirmPassword("nguyen1234");
 
     ResponseEntity<User> responseEntity = userController.createUser(userRequest);
+
     Assertions.assertEquals(HttpStatus.BAD_REQUEST.value(), responseEntity.getStatusCodeValue());
 
-    userRequest.setPassword("nguyen");
-    userRequest.setConfirmPassword("nguyen-difference");
+    userRequest.setPassword("nguyenlinh");
+    userRequest.setConfirmPassword("nguyenlinh");
     responseEntity = userController.createUser(userRequest);
-    Assertions.assertEquals(HttpStatus.BAD_REQUEST.value(), responseEntity.getStatusCodeValue());
+    Assertions.assertEquals(HttpStatus.OK.value(), responseEntity.getStatusCodeValue());
 
-    userRequest.setPassword("nguyen");
-    userRequest.setConfirmPassword("nguyen");
+    userRequest.setPassword("nguyen123");
+    userRequest.setConfirmPassword("nguyen123");
     responseEntity = userController.createUser(userRequest);
     Assertions.assertEquals(HttpStatus.OK.value(), responseEntity.getStatusCodeValue());
     User user = responseEntity.getBody();
